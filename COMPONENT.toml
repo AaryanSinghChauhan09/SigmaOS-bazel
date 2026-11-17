@@ -3,7 +3,7 @@ name = "SigmaOS-bazel"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "bazel component"
+description = "Bazel"
 upstream = []
 
 [contract]
