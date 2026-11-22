@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-bazel Component Wiki
+# SigmaOS-bazel Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-bazel provides Bazel for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-bazel provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-bazel Abstraction
-- Fail-Fast on SigmaOS-bazel Initialization Errors
-- Deterministic SigmaOS-bazel Setup
-- Clear Abstraction Over SigmaOS-bazel APIs
-- Composition over Inheritance for SigmaOS-bazel extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-bazel Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-bazel Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-bazel Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-bazel APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-bazel extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-bazel follows a SigmaOS-bazel pattern:
+SigmaOS-bazel follows a SigmaOS-bazel pattern:
 - **SigmaOS-bazel Core**: Provides SigmaOS-bazel support, SigmaOS-bazel management, and SigmaOS-bazel tracking
 - **Management**: Supports SigmaOS-bazel management, SigmaOS-bazel configuration, and SigmaOS-bazel lifecycle
 - **Tracking**: Supports SigmaOS-bazel status, SigmaOS-bazel tracking, and SigmaOS-bazel lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-bazel follows a SigmaOS-bazel pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-bazel by given configuration
--  - Register a SigmaOS-bazel by given name
--  - Get SigmaOS-bazel status and SigmaOS-bazel availability
--  - Track SigmaOS-bazel management and SigmaOS-bazel tracking
+- Manage a SigmaOS-bazel by given configuration
+- Register a SigmaOS-bazel by given name
+- Get SigmaOS-bazel status and SigmaOS-bazel availability
+- Track SigmaOS-bazel management and SigmaOS-bazel tracking
 - Error types for SigmaOS-bazel failure scenarios or unsupported SigmaOS-bazel types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-bazel init, SigmaOS-bazel management)
 3. **Assert**: Verify the expected SigmaOS-bazel results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-bazel initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-bazel failure scenarios
 - Unit tests provided for SigmaOS-bazel management and configuration
